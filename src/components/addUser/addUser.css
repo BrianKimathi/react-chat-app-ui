@@ -1,0 +1,79 @@
+.addUser {
+  width: fit-content;
+  height: fit-content;
+  background-color: rgba(17, 25, 40, 0.5);
+  backdrop-filter: blur(19px) saturate(180%);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+
+  /* Centering */
+  position: fixed; /* Ensure the element stays centered relative to the viewport */
+  top: 50%;
+  left: 50%;
+  transform: translate(
+    -50%,
+    -50%
+  ); /* Moves the element back by half its width and height */
+  z-index: 9999;
+  form {
+    display: flex;
+    gap: 20px;
+
+    input {
+      flex: 1;
+      background-color: rgba(17, 25, 40, 0.5);
+      border: none;
+      outline: none;
+      color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      font-size: 16px;
+    }
+
+    button {
+      padding: 15px;
+      background-color: #1a73e8;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: rgba(241, 60, 97, 0.796);
+    }
+  }
+
+  .user {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border: 1px solid #dddddd35;
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
+    justify-content: space-between;
+
+    img {
+      height: 50px;
+      width: 50px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    button {
+      padding: 10px;
+      background-color: #1a73e8;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  }
+}
